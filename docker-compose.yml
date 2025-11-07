@@ -1,0 +1,12 @@
+# local testing
+
+version: '3.8'
+
+services:
+  model-api:
+    build: .
+    image: sunculture-risk-model:0.1
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_VERSION=0.1
